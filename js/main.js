@@ -1,21 +1,21 @@
-// search in header
-const searchEl = document.querySelector(".search");
-const searchIuputEl = searchEl.querySelector("input");
+// // search in header
+// const searchEl = document.querySelector(".search");
+// const searchIuputEl = searchEl.querySelector("input");
 
-searchEl.addEventListener("click", function () {
-  searchIuputEl.focus();
-});
+// searchEl.addEventListener("click", function () {
+//   searchIuputEl.focus();
+// });
 
-searchIuputEl.addEventListener("focus", function () {
-  // 두번째 함수를 핸들러라고 한다.
-  searchEl.classList.add("focused");
-  searchIuputEl.setAttribute("placeholder", "통합검색");
-});
+// searchIuputEl.addEventListener("focus", function () {
+//   // 두번째 함수를 핸들러라고 한다.
+//   searchEl.classList.add("focused");
+//   searchIuputEl.setAttribute("placeholder", "통합검색");
+// });
 
-searchIuputEl.addEventListener("blur", function () {
-  searchEl.classList.remove("focused");
-  searchIuputEl.setAttribute("placeholder", "");
-});
+// searchIuputEl.addEventListener("blur", function () {
+//   searchEl.classList.remove("focused");
+//   searchIuputEl.setAttribute("placeholder", "");
+// });
 
 // badge in header && ScrollTo
 const badgeEl = document.querySelector("header .badges");
@@ -162,6 +162,6 @@ spyEls.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller());
 });
 
-// 올해 날짜 계산 
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
+// // 올해 날짜 계산 
+// const thisYear = document.querySelector('.this-year');
+// thisYear.textContent = new Date().getFullYear();

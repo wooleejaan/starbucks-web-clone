@@ -1,0 +1,86 @@
+.signin {
+  margin-top: 120px;
+  /* padding 값이 3개면 => 상 중 하 */
+  padding: 10px 0 150px; 
+  background-image: url("../images/signin_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.signin h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  /* 제목과 form 부분의 간격 */
+  margin-bottom: 24px;
+}
+.signin__card {
+  width: 500px;
+  /* 값이 2개면 위아래 좌우(가로너비 있으므로 좌우 정렬 가능) */
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #F6F5F0;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+  color: #555;
+}
+.signin__card h2 {
+  /* padding은 내부 여백 */
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.signin__card h2 strong {
+  font-weight: 700;
+  color: #006633;
+}
+.signin__card form {
+  /* 내부여백 : 위아래 좌우 */
+  padding: 30px 22px;
+}
+.signin__card form input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  /* 우리가 padding과 border를 사용하므로 그 값만큼 늘어날 수 있어서 그걸 방지(width 100% 보다 넘지 않도록) */
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/* 대괄호([])는 속성 선택자 */
+.signin__card form [type="submit"] {
+  background-color: #006633;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.signin__card form p {
+  font-size: 12px;
+  color: #006633;
+  text-align: center;
+}
+.signin__card .actions {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+.signin__card .actions a {
+  /* flex-item들이 요소의 증가 너비가 1 비율, 기본 너비는 0으로 없는 상태 */
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+  border-right: 1px solid #ddd;
+}
+.signin__card .actions a:last-child {
+  border-right: none;
+}
+.signin__card .actions a:hover {
+  text-decoration: underline;
+}
